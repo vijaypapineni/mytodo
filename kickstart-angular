@@ -1,0 +1,52 @@
+Errors?
+
+If you see permission or access errors, such as permission (`EPERM`) or access errors (`EACCESS`), do not use sudo as a work-around.
+
+How to install Node JS and NPM on Ubuntu
+----------------------------------------------
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+
+How to install generator-angular
+------------------------------------
+sudo npm install -g generator-angular
+
+How to upgrade node in ubuntu
+--------------------------------------
+sudo npm clean cache
+sudo npm install -g n
+sudo n stable
+
+How to upgrade npm in ubuntu
+--------------------------------
+npm install --global npm@latest
+--sudo npm install npm -g
+
+Check nodejs version in ubuntu
+---------------------------------
+nodejs --version
+
+Install YeoMan Toolset
+--------------------------------
+sudo npm install --global yo bower grunt-cli
+
+Confirm install
+---------------------------------
+yo --version && bower --version && grunt --version
+
+Create a project folder
+--------------------------------
+mkdir mytodo && cd mytodo
+yo angular
+
+--The AngularJS generator provides options to use Sass (with Compass) and include Twitter Bootstrap. For this codelab, we won't use Sass but will use Bootstrap. Enter n then y respectively to these options.
+
+-- If any errors are encountered, try running bower install and sudo npm install
+-- If any errors related to package.json, try running sudo npm install package.json -g
+
+Start server to view deployed app
+-------------------------------------
+grunt serve
+--It will be up and running on  localhost:9000
+
